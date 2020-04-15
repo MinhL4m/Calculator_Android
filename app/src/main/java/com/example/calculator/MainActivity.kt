@@ -36,90 +36,12 @@ class MainActivity : AppCompatActivity() {
         savedInstanceState.putString("firstNum", firstNum)
     }
 
-    fun zeroOnClick(view:View){
+    fun numOnClick(view:View){
         if(resultScreen != "0"){
-            resultScreen += "0"
-            resultTextView.text = resultScreen
-        }
-    }
+            resultScreen += (view as Button).text
 
-    fun oneOnClick(view: View){
-        if(resultScreen != "0"){
-            resultScreen += "1"
         }else{
-            resultScreen = "1"
-        }
-        resultTextView.text = resultScreen
-    }
-
-    fun twoOnClick(view:View){
-        if(resultScreen != "0"){
-            resultScreen += "2"
-        }else{
-            resultScreen = "2"
-        }
-        resultTextView.text = resultScreen
-    }
-
-    fun threeOnClick(view:View){
-        if(resultScreen != "0"){
-            resultScreen += "3"
-        }else{
-            resultScreen = "3"
-        }
-        resultTextView.text = resultScreen
-    }
-
-    fun fourOnClick(view:View){
-        if(resultScreen != "0"){
-            resultScreen += "4"
-        }else{
-            resultScreen = "4"
-        }
-        resultTextView.text = resultScreen
-    }
-
-    fun fiveOnClick(view:View){
-        if(resultScreen != "0"){
-            resultScreen += "5"
-        }else{
-            resultScreen = "5"
-        }
-        resultTextView.text = resultScreen
-    }
-
-    fun sixOnClick(view:View){
-        if(resultScreen != "0"){
-            resultScreen += "6"
-        }else{
-            resultScreen = "6"
-        }
-        resultTextView.text = resultScreen
-    }
-
-    fun sevenOnClick(view:View){
-        if(resultScreen != "0"){
-            resultScreen += "7"
-        }else{
-            resultScreen = "7"
-        }
-        resultTextView.text = resultScreen
-    }
-
-    fun eightOnClick(view:View){
-        if(resultScreen != "0"){
-            resultScreen += "8"
-        }else{
-            resultScreen = "8"
-        }
-        resultTextView.text = resultScreen
-    }
-
-    fun nineOnClick(view:View){
-        if(resultScreen != "0"){
-            resultScreen += "9"
-        }else{
-            resultScreen = "9"
+            resultScreen = (view as Button).text as String
         }
         resultTextView.text = resultScreen
     }
